@@ -1,13 +1,12 @@
-import './App.css'
+import { CanvasView} from "./ui/CanvasView.tsx";
+import { Toolbar } from "./ui/Toolbar.tsx";
 
 function App() {
   return (
-    <>
-      <h1>Mini Vector Editor by Piotr Rudnicki</h1>
-      <p>
-        This is the shell of the Mini Vector Editor app.
-      </p>
-    </>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+      <Toolbar />
+      <CanvasView />
+    </div>
   )
 }
 
